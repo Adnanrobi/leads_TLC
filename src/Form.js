@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './App.css';
 
 export default function Form() {
   const [TradeLicenseNo, setTradeLicenseNo] = useState("");
@@ -173,13 +174,7 @@ export default function Form() {
             className="bd-gov"
             src="https://certificate.upsheba.com/img/bd-gov.png"
           />
-          <label className="label">Trade License No. : </label>
-          <input
-            onChange={handleTradeLicenseNo}
-            className="input"
-            value={TradeLicenseNo}
-            type="number"
-          />
+          <label className="label">Trade License No. : </label> <input onChange={handleTradeLicenseNo} className="input" value={TradeLicenseNo} type="number"/>
 
           <label className="label">Name of the business organization : </label>
           <input
@@ -314,12 +309,12 @@ export default function Form() {
           />
 
           <div className="uploadDiv">
-            <label class="custom-file-upload">
+            <label className="custom-file-upload">
               <input type="file" />
               Signature1
             </label>
 
-            <label class="custom-file-upload">
+            <label className="custom-file-upload">
               <input type="file" />
               Signature2
             </label>
